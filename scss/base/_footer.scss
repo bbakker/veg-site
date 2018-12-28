@@ -1,0 +1,16 @@
+// *********************************** //
+// ************ Footer  ************** //
+// *********************************** //
+footer {
+  margin-top: 100px;
+  background-color: $footer-background;
+  min-height: 200px;
+  width: 100%;
+  padding-bottom: $global-padding * 3;
+  .wrapper {
+    padding: $global-padding;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,30 @@
+// ******************************************************* //
+// ********************** Alternative ******************** //
+// ******************************************************* //
+body.alternative1 {
+  background: #fbfbfb;
+
+  header {
+    background: white;
+    #main-menu,
+    .tagline a {
+      color: $text-color;
+    }
+    #main-menu {
+      margin-top: 0;
+      padding-bottom: $global-padding;
+      a {
+        font-weight: 300;
+      }
+    }
+    .search input {
+      border: 1px solid #dadada;
+    }
+  }
+  #second-menu-wrapper {
+    border: 0;
+  }
+  footer {
+    background: white;
+  }
+}

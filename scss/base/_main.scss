@@ -1,0 +1,22 @@
+
+// *********************************** //
+// ******** Main section  ************ //
+// *********************************** //
+#main {
+  //margin-top: $global-margin *3;
+  min-height: 500px;
+
+  p {
+    position: relative;
+
+    .sidenote {
+      width: calc((#{$flexboxgrid-max-width} / 12) * 3);
+      max-width: calc((#{$flexboxgrid-max-width} / 12) * 3);
+      position: absolute;
+      left: -8px;
+      margin-left: calc((-#{$flexboxgrid-max-width} / 12) * 3);
+      @extend .sidebar-left;
+
+    }
+  }
+}

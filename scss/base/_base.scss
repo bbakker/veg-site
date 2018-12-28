@@ -1,0 +1,156 @@
+// ****************************************** //
+// ********** Grid system & mixins ********** //
+// ****************************************** //
+// Grid system:
+// http://hugeinc.github.io/flexboxgrid-sass
+// Config in grid.scss
+// Dependency: https://raw.githubusercontent.com/mastastealth/sass-flex-mixin/master/_flex.scss
+
+@mixin sm {
+  @media only screen and (min-width: nth(get-list("sm"), 3)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (min-width: nth(get-list("md"), 3)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (min-width: nth(get-list("lg"), 3)) {
+    @content;
+  }
+}
+
+.hide-sm {
+  @media only screen and (max-width: nth(get-list("sm"), 3)) {
+    display: none;
+  }
+}
+
+.hide-md {
+  @media only screen and (max-width: nth(get-list("md"), 3)) {
+    display: none;
+  }
+}
+
+.hide-lg {
+  @media only screen and (max-width: nth(get-list("lg"), 3)) {
+    display: none;
+  }
+}
+
+
+// *********************************** //
+// ********** Basic styling ********** //
+// *********************************** //
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: $text-color;
+  font-weight: 300;
+  line-height: rem-calc(32);
+  font-size: rem-calc(17);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  font-size: 18px;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover,
+    &.active {
+      color: $secondary-color;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    li {
+      margin: 0;
+      list-style: none;
+
+      &:not(:first-child) {
+        margin-left: 15px;
+      }
+    }
+
+    // second menu level
+    ul {
+      display: none;
+    }
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  color: #333333d6;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+p.bible-verse {
+  //font-style: italic;
+}
+
+blockquote {
+  border-left: 3px solid $primary-color;
+  padding-left: 10px;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+em {
+  color: $primary-color;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration-color: $secondary-color;
+}
+
+.button {
+  background: none;
+  border: 1px solid grey;
+  padding: 4px 10px;
+  display: inline-block;
+  border-radius: 2px;
+  text-decoration: none;
+  color: $text-color;
+  transition: all 0.2s;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:active {
+    //background-color: lighten($secondary-color, 30%);
+    background: $secondary-color;
+    color: white;
+    border-color: $secondary-color;
+  }
+}
+

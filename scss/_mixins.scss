@@ -1,0 +1,57 @@
+// *********************************************** //
+// *** Functions, mixins and reusable classes ***  //
+// *********************************************** //
+
+/**
+  Helper mehtod to calculate rem's based on pixels.
+ */
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+/**
+  Full opacity on hover.
+  Makes an element transparent until mouse hover.
+ */
+@mixin opacity-on-hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
+
+/**
+  Slow underline hover effect.
+  Works for span and href elements.
+ */
+.underline-hover {
+  span,
+  a {
+    text-decoration: none;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 110%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $secondary-color;
+      content: "";
+      -webkit-transform: translateY(8px);
+      opacity: 0;
+      transition-property: -webkit-transform, opacity;
+      transition-duration: 0.5s;
+    }
+
+    &.active:before,
+    &:hover:before,
+    &:active:before {
+      -webkit-transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

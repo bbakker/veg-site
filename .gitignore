@@ -1,0 +1,8 @@
+.idea/*
+**/.sass-cache
+node_modules/
+*.orig
+npm-debug.log*
+app/css/
+app/pages/
+package-lock.json

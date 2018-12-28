@@ -1,0 +1,28 @@
+// *********************************** //
+// ************ Sidebars  ************ //
+// *********************************** //
+.sidebar {
+  &-left {
+    font-size: rem-calc(15);
+    font-style: italic;
+    padding-right: $global-padding * 2;
+    @include lg {
+      text-align: right;
+    }
+  }
+
+  &-right {
+    padding-left: $global-padding * 2;
+    font-size: rem-calc(15);
+  }
+}
+
+// **************************************************** //
+// ***************** serees buttons  ****************** //
+// **************************************************** //
+.serees-buttons {
+  a:first-of-type {
+    margin-right: $global-margin;
+  }
+}
+

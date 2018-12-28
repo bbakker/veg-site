@@ -1,0 +1,79 @@
+// ********************************** //
+// ******** Hamburger menu ********** //
+// ********************************** //
+$hamburger-settings: (
+        font-size: 5px,
+        color: #394550,
+        transition-duration: 0.2s,
+        timing-function: ease-in-out
+);
+
+@function setting($key) {
+  @return map-get($hamburger-settings, $key);
+}
+
+.hamberger-menu-wrapper {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  @include lg {
+    display: none;
+  }
+
+  > span {
+    color: #394550;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    display: inline-block;
+    font-size: setting(font-size);
+    margin: 2%;
+    position: relative;
+    user-select: none;
+    transition: setting(transition-duration) setting(timing-function);
+    width: 5em;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+
+    span {
+      background: setting(color);
+      border-radius: setting(border-radius);
+      backface-visibility: hidden;
+      height: 0.5em;
+      position: absolute;
+      transition: setting(transition-duration) setting(timing-function);
+      width: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    span {
+      left: 0;
+
+      &:nth-child(1) {
+        top: 1em;
+      }
+      &:nth-child(2) {
+        top: 2.45em;
+      }
+      &:nth-child(3) {
+        top: 4em;
+      }
+    }
+
+    &.open span {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(1.1em, 1.1em);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(1.1em, -1.1em);
+      }
+    }
+  }
+}

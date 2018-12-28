@@ -1,0 +1,35 @@
+// *********************************** //
+// ********** Search field *********** //
+// *********************************** //
+.search {
+  position: relative;
+
+  button.search-submit {
+    z-index: 2;
+    width: 40px;
+    height: 30px;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    background-color: transparent;
+    background-position: 10px 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2222px%22%20height%3D%2222px%22%20viewBox%3D%220%200%2022%2022%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3C%21--%20Generator%3A%20Sketch%2044%20%2841411%29%20-%20http%3A%2F%2Fwww.bohemiancoding.com%2Fsketch%20--%3E%0A%20%20%20%20%3Ctitle%3Ezoeken%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%3E%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20id%3D%22Symbols%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22zoeken%22%20stroke%3D%22%23B0B0B0%22%20fill%3D%22%23B0B0B0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M9.56818182%2C17.6818182%20C5.08706818%2C17.6818182%201.45454545%2C14.048925%201.45454545%2C9.56794319%20C1.45454545%2C5.08696135%205.08706818%2C1.45454545%209.56818182%2C1.45454545%20C14.0492955%2C1.45454545%2017.6818182%2C5.08696135%2017.6818182%2C9.56794319%20C17.6818182%2C14.048925%2014.0492955%2C17.6818182%209.56818182%2C17.6818182%20M21.3601591%2C20.6852955%20L16.3015455%2C15.6266818%20C17.7486364%2C14.0201818%2018.6363636%2C11.9006136%2018.6363636%2C9.56818182%20C18.6363636%2C4.56015909%2014.5766818%2C0.5%209.56818182%2C0.5%20C4.56015909%2C0.5%200.5%2C4.56015909%200.5%2C9.56818182%20C0.5%2C14.5766818%204.56015909%2C18.6363636%209.56818182%2C18.6363636%20C11.9006136%2C18.6363636%2014.0201818%2C17.7486364%2015.6266818%2C16.3015455%20L20.6852955%2C21.3601591%20C20.7716818%2C21.4470227%2020.891%2C21.5%2021.0227273%2C21.5%20C21.2866591%2C21.5%2021.5%2C21.2866591%2021.5%2C21.0227273%20C21.5%2C20.8914773%2021.4470227%2C20.7721591%2021.3601591%2C20.6852955%22%20id%3D%22Page-1%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+  }
+
+  input {
+    z-index: 1;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.8rem 0 0.6rem 0;
+    padding-left: 40px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+}
