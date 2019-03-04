@@ -3,19 +3,20 @@
 // ********************************** //
 ul.breadcrumbs {
   display: flex;
-  margin-bottom: 45px;
-  margin-top: 15px;
+  margin-bottom: $global-margin *3;
   font-size: 15px;
   letter-spacing: 0.4px;
   flex-wrap: wrap;
 
   li {
     @include opacity-on-hover;
+
     a {
       display: block;
       text-decoration: none;
       color: $text-color;
     }
+
     &:hover,
     &:active {
       a {
@@ -23,7 +24,7 @@ ul.breadcrumbs {
       }
     }
 
-    &:not(:last-child):not(:first-child) {
+    &:not(:last-child) {
       margin-right: $global-padding;
       padding-right: 25px;
       background-position: right 0px center;
@@ -32,12 +33,9 @@ ul.breadcrumbs {
       background-repeat: no-repeat;
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NTEuODQ2IiBoZWlnaHQ9IjQ1MS44NDciPiAgPHBhdGggZD0iTTM0NS40NDEgMjQ4LjI5MkwxNTEuMTU0IDQ0Mi41NzNjLTEyLjM1OSAxMi4zNjUtMzIuMzk3IDEyLjM2NS00NC43NSAwLTEyLjM1NC0xMi4zNTQtMTIuMzU0LTMyLjM5MSAwLTQ0Ljc0NEwyNzguMzE4IDIyNS45MiAxMDYuNDA5IDU0LjAxN2MtMTIuMzU0LTEyLjM1OS0xMi4zNTQtMzIuMzk0IDAtNDQuNzQ4IDEyLjM1NC0xMi4zNTkgMzIuMzkxLTEyLjM1OSA0NC43NSAwbDE5NC4yODcgMTk0LjI4NGM2LjE3NyA2LjE4IDkuMjYyIDE0LjI3MSA5LjI2MiAyMi4zNjYgMCA4LjA5OS0zLjA5MSAxNi4xOTYtOS4yNjcgMjIuMzczeiIvPjwvc3ZnPg==);
     }
+
     &:last-of-type {
       font-weight: 600;
-    }
-    &:first-child {
-      opacity: 1;
-      padding-right: 15px;
     }
   }
 }

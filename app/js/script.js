@@ -84,9 +84,10 @@ $(document).ready(function() {
       document.documentElement.clientHeight;
 
     // Set page progress bar
-    let scrolled = winScroll / height * 100;
-    document.getElementById("ppb").style.width = scrolled + "%";
-
+    if($('#ppb').length){
+      let scrolled = winScroll / height * 100;
+      document.getElementById("ppb").style.width = scrolled + "%";
+    }
     // Change header class, if necessary
     var header = $("header");
     if (winScroll >= 70) {

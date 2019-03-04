@@ -3,11 +3,11 @@
     <div class="row hide-sm">
       <div class="col-xs-12">
         <ul title="Ga naar deze pagina" class="breadcrumbs">
-          <li><a href="#">Home</a></li>
-          @@if (first.enabled === true){@@if (first.link_enabled === true){<li><a href="@@first.link">@@first.label</a></li>}@@if(first.link_enabled === false){<li>@@first.label</li>} }
-          @@if (second.enabled === true){@@if (second.link_enabled === true){<li><a href="@@second.link">@@second.label</a></li>}@@if (second.link_enabled === false){<li>@@second.label</li>}}
-          @@if (third.enabled === true){@@if (third.link_enabled === true){<li><a href="@@third.link">@@third.label</a></li>}@@if (third.link_enabled === false){<li>@@third.label</li>}}
-          @@if (fourth.enabled === true){ @@if (fourth.link_enabled === true){<li><a href="@@fourth.link">@@fourth.label</a></li>}@@if (fourth.link_enabled === false){<li>@@fourth.label</li>}}
+          <li title="Ga naar deze pagina"><a href="#">Home</a></li>
+          @@if (first.enabled === true){@@if (first.link_enabled === true){<li title="Ga naar deze pagina"><a href="@@first.link">@@first.label</a></li >}@@if(first.link_enabled === false){<li title="U bent op deze pagina">@@first.label</li>} }
+          @@if (second.enabled === true){@@if (second.link_enabled === true){<li title="Ga naar deze pagina"><a href="@@second.link">@@second.label</a></li>}@@if (second.link_enabled === false){<li title="U bent op deze pagina">@@second.label</li>}}
+          @@if (third.enabled === true){@@if (third.link_enabled === true){<li title="Ga naar deze pagina"><a href="@@third.link">@@third.label</a></li>}@@if (third.link_enabled === false){<li title="U bent op deze pagina">@@third.label</li>}}
+          @@if (fourth.enabled === true){ @@if (fourth.link_enabled === true){<li title="Ga naar deze pagina"><a href="@@fourth.link">@@fourth.label</a></li>}@@if (fourth.link_enabled === false){<li title="U bent op deze pagina">@@fourth.label</li>}}
         </ul>
       </div>
     </div>
