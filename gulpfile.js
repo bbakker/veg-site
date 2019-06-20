@@ -11,19 +11,19 @@ const sassGlob = require('gulp-sass-glob');
 
 // Include partial HTML files
 function includePartialFiles() {
-  return gulp.src(['./pages/*.html'])
+  return gulp.src(['pages/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: './html_partials'
+      basepath: 'html_partials'
     }))
-    .pipe(gulp.dest('./app/pages'));
+    .pipe(gulp.dest('app/pages'));
 }
 
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./app/"
+      baseDir: "app/"
     },
     port: 3000,
     //open: 'external',
@@ -40,29 +40,29 @@ function browserSyncReload(done) {
 
 // Clean assets
 function clean() {
-  return del(["./app/css/", './app/pages']);
+  return del(["app/css/", 'app/pages']);
 }
 
 // CSS task
 function css() {
   return gulp
-    .src("./scss/**/*.scss")
+    .src("scss/**/*.scss")
     .pipe(sassGlob())
     .pipe(plumber())
     .pipe(sass({outputStyle: "expanded"}))
-    .pipe(gulp.dest("./app/css/"))
+    .pipe(gulp.dest("app/css/"))
     .pipe(browsersync.stream());
 }
 
 // Watch files and start the tasks
 function watchFiles() {
-  gulp.watch("./scss/**/*", gulp.series(css, browserSyncReload));
-  gulp.watch("./app/js/**/*.js", gulp.series(browserSyncReload));
+  gulp.watch("scss/**/*", gulp.series(css, browserSyncReload));
+  gulp.watch("app/js/**/*.js", gulp.series(browserSyncReload));
   gulp.watch(
     [
-      "./html_partials/**/*",
-      "./app/*.html",
-      "./pages/*.html"
+      "html_partials/**/*",
+      "app/*.html",
+      "pages/*.html"
     ],
     gulp.series(includePartialFiles, browserSyncReload)
   );
