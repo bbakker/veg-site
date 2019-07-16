@@ -41,4 +41,5 @@ This way you can watch the pages on multiple devices. Every time one of your fil
 ## HTML partials
 We make use of html partials. See documentation: https://github.com/coderhaoxin/gulp-file-include
 
-
+## SCSS Grid system
+Just for the sake of fast mucking up the pages we make use of http://hugeinc.github.io/flexboxgrid-sass

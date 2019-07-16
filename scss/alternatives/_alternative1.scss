@@ -2,11 +2,12 @@
 // ********************** Alternative ******************** //
 // ******************************************************* //
 body.alternative1 {
-  //background: #fbfbfb;
-  background: #e47d4505;
-
+  //background: #e5afaf;
+  //background: #e47d4505;
+  background: $background-variant1;
   header {
     background: white;
+
     #main-menu,
     .tagline a {
       color: $text-color;
@@ -22,7 +23,8 @@ body.alternative1 {
       border: 1px solid #dadada;
     }
   }
-  #second-menu-wrapper {
+
+  #second-menu-wrapper {  
     border: 0;
   }
   footer {

@@ -8,6 +8,8 @@ const plumber = require("gulp-plumber");
 const sass = require("gulp-sass");
 const fileinclude = require('gulp-file-include');
 const sassGlob = require('gulp-sass-glob');
+const concat = require('gulp-concat');
+
 
 // Include partial HTML files
 function includePartialFiles() {
@@ -40,7 +42,7 @@ function browserSyncReload(done) {
 
 // Clean assets
 function clean() {
-  return del(["app/css/", 'app/pages']);
+  return del(["app/css/", 'app/pages', 'app/js']);
 }
 
 // CSS task
@@ -54,10 +56,22 @@ function css() {
     .pipe(browsersync.stream());
 }
 
+
+// JS task
+function js(){
+  return gulp
+    .src(["js/**/*.js"])
+    .pipe(plumber())
+    .pipe(concat("script.js"))
+    .pipe(gulp.dest("app/js/"))
+    .pipe(browsersync.stream());
+}
+
 // Watch files and start the tasks
 function watchFiles() {
   gulp.watch("scss/**/*", gulp.series(css, browserSyncReload));
   gulp.watch("app/js/**/*.js", gulp.series(browserSyncReload));
+  gulp.watch("js/**/*.js", gulp.series(js, browserSyncReload));
   gulp.watch(
     [
       "html_partials/**/*",
@@ -70,6 +84,7 @@ function watchFiles() {
 
 // Tasks
 gulp.task("scss", css);
+gulp.task("js", js);
 gulp.task("clean", clean);
 
 // watch

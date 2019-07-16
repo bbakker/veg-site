@@ -42,7 +42,6 @@
   }
 }
 
-
 // *********************************** //
 // ********** Basic styling ********** //
 // *********************************** //
@@ -52,7 +51,7 @@ body {
   color: $text-color;
   font-weight: 300;
   line-height: rem-calc(32);
-  font-size: rem-calc(19);
+  font-size: $normal-font-size;
 }
 
 * {
@@ -151,9 +150,13 @@ a {
     background: $secondary-color;
     color: white;
     border-color: $secondary-color;
-  }
+  } 
 }
 
-.text-align-center{
+button:focus {
+  outline: none;
+}
+
+.text-align-center {
   text-align: center;
 }

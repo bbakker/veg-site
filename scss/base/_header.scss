@@ -37,7 +37,7 @@ header {
     @include md {
       margin: 0;
       &-small {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
     }
 
@@ -57,7 +57,6 @@ header {
     }
   }
 }
-
 
 // ******************************************************* //
 // ********** Small header, when scrolled down. ********** //
@@ -102,10 +101,21 @@ header.small {
     }
 
     .searchwrapper {
-      display: none;
+      transition: width 0.4s linear;
       @include md {
         max-width: 25%;
         flex-basis: 25%;
+        display: flex;
+        justify-content: flex-end;
+
+        .search {
+          transition: max-width 0.4s linear;
+          max-width: 42px;
+
+          &.open {
+            max-width: 100%;
+          }
+        }
       }
     }
   }
@@ -114,7 +124,7 @@ header.small {
     margin-top: -80px;
 
     #main-menu {
-      padding-top: $global-padding;
+      padding-top: 15px;
     }
   }
 }

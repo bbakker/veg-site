@@ -1,84 +1,107 @@
 <!-- // *********************************** // -->
-  <!-- // ************  Header  ************* // -->
-  <!-- // *********************************** // -->
-  <header>
-    <div class="toprow">
-      <div class="wrapper container-fluid">
-        <div class="row end-xs">
-          <nav id="account-menu" class="col-md-3">
-            <ul>
-              <li><a href="#"><span>Mijn</span>gemeente</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-
-    <div class="middlerow">
-      <div class="wrapper container-fluid">
-        <div class="row middle-sm">
-              <span class="tagline col-md-7 col-sm-12">
-                <a class="tagline-full" title="Ga naar onze homepage" href="#">Volle Evangelie Gemeente <span>Immanuël</span> Breda</a>
-              <a class="tagline-small" title="Ga naar onze homepage" href="#">VEG <span>Immanuël</span> Breda</a>
-              </span>
-          <div class="col-md-5 col-sm-12 searchwrapper">
-            <div class="search">
-              <button type="submit" value="Zoeken" class="search-submit">Zoeken</button>
-              <input type="text" placeholder="Waar ben je naar op zoek?">
-            </div>
-          </div>
-        </div>
-
-        <div class="hamberger-menu-wrapper">
-          <span>MENU</span>
-          <div class="hamburger-menu"><span></span><span></span><span></span></div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="bottomrow">
-      <div class="wrapper container-fluid">
-        <div class="row center-xs">
-          <nav id="main-menu" class="underline-hover col-md-6">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li>
-                    <span>Leer ons kennen</span>
-                      <ul>
-                      <li><a href="#">Subitem bij leer ons kennen</a></li>
-                      <li><a href="#">Subitem 2</a></li>
-                      <li><a href="#">Subitem 3</a></li>
-                      <li><a href="#">Subitem 4</a></li>
-                      <li><a href="#">Subitem 5</a></li>
-                      <li><a href="#">Subitem 6</a></li>
-                    </ul>
-              </li>
-              <li>
-                <span>Ontdek de bijbel</span>
-                <ul>
-                  <li><a href="#">Boekenserie</a></li>
-                  <li><a href="#">Mp3's en podcast</a></li>
-                  <li><a href="#">Readers over het onderwerp 'Aanvaarding'</a></li>
-                  <li><a href="#">Bijbelstudies over 'Gods plan met mensen'</a></li>
-                  <li><a href="#">Bijbelstudies over 'Het werk van Jezus Christus'</a></li>
-                  <li><a href="#">Bijbelstudies over 'Openbaring van Jezus Christus'</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Agenda</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!--  Main menu second level   -->
-  <section id="second-menu-wrapper">
+<!-- // ************  Header  ************* // -->
+<!-- // *********************************** // -->
+<header>
+  <div class="toprow">
     <div class="wrapper container-fluid">
-      <div class="row">
-        <nav id="main-menu-second" style="display:none;" class="second-level col-md-offset-3 col-md-5 closed">
+      <div class="row end-xs">
+        <nav id="account-menu" class="col-md-3">
+          <ul>
+            <li><a href="#"><span>Mijn</span>gemeente</a></li>
+          </ul>
         </nav>
       </div>
     </div>
-  </section>
+  </div>
+
+  <div class="middlerow">
+    <div class="wrapper container-fluid">
+      <div class="row middle-sm">
+        <span class="tagline col-md-7 col-sm-12">
+          <a class="tagline-full" title="Ga naar onze homepage" href="#">Volle Evangelie Gemeente <span>Immanuël</span>
+            Breda</a>
+          <a class="tagline-small" title="Ga naar onze homepage" href="#">VEG <span>Immanuël</span> Breda</a>
+        </span>
+        <div class="col-md-5 col-sm-12 searchwrapper">
+          <div class="search">
+            <button type="submit" value="Zoeken" class="search-submit">Zoeken</button>
+            <input type="text" value="" placeholder="Waar ben je naar op zoek?">
+          </div>
+        </div>
+      </div>
+
+      <div class="hamberger-menu-wrapper">
+        <span>MENU</span>
+        <div class="hamburger-menu"><span></span><span></span><span></span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bottomrow">
+    <div class="wrapper container-fluid">
+      <div class="row center-xs">
+        <nav id="main-menu" class="underline-hover col-md-6">
+          <ul class="menu-level1">
+            <li class="home"><a href="homepage.html">Home</a></li>
+            <li title="Leer ons kennen" data-has-submenu="true">
+              <span>Leer ons kennen</span>
+              <div class="submenu_desc" style="display:none;">
+                <h3>Leer onze gemeente kennen</h3>
+                <p>Bent u benieuwd naar wie wij zijn als gemeente of zoekt u praktische informatie om ons te komen bezoeken?</p>
+              </div>
+              <ul class="menu-level2">
+                <li><a href="#">Leer ons kennen</a></li>
+                <li><a href="#">Wie zijn wij?</a></li>
+                <li><a href="#">Wat geloven wij?</a></li>
+                <li><a href="#">Onze samenkomsten</a></li>
+                <li><a href="#">Plan uw bezoek</a></li>
+                <li><a href="#">Voorzieningen</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+            <li title="Ontdek de bijbel" data-has-submenu="true">
+              <span>Ontdek de bijbel</span>
+              <div class="submenu_desc" style="display:none;">
+                <h3>Ontdek wat de bijbel u te bieden heeft</h3>
+                <p>Wij helpen u graag om de bijbel te ontdekken. Volg een van onze leesplannen, luister podcast of schaf een van onze boeken aan.</p>
+              </div>
+              <ul class="menu-level2">
+                <li title="Boekenserie" data-has-submenu="true" class="icon-next"><span>Boekenserie</span>
+                  <div class="submenu_desc" style="display:none;">
+                    <h3>We hebben een aantal boeken</h3>
+                    <p>Wilt u diep in de bijbel duiden? Lees dan de 5 boeken over het Gods plan met mensen</p>
+                  </div>
+                  <ul class="menu_level3">
+                    <li><a href="#">Terug</a></li>
+                    <li><a href="#">Dit is een eerste item</a></li>
+                    <li><a href="#">Dit is een tweeede item</a></li>
+                    <li><a href="#">Ook dit is een heel mooi en lang item</a></li>
+                    <li><a href="#">Deze is kort</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Podcast & Mp3's</a></li>
+                <li><a href="#">Readers over het onderwerp 'Aanvaarding'</a></li>
+                <li><a href="artikel.html">Bijbelstudies over 'Gods plan met mensen'</a></li>
+                <li><a href="#">Bijbelstudies over 'Het werk van Jezus Christus'</a></li>
+                <li><a href="#">Bijbelstudies over 'Openbaring van Jezus Christus'</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Agenda</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--  Main menu second level   -->
+<section id="second-menu-wrapper">
+  <div>
+    <div class="row">
+      <div id="main-menu-second-description" class="col-md-4 closed"></div>
+      <nav id="main-menu-second" style="display:none;" class="second-level col-md-8 closed">
+      </nav>
+    </div>
+  </div>
+</section>
