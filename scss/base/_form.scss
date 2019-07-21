@@ -1,0 +1,17 @@
+// ****************************************** //
+// ************* Form elements ************** //
+// ****************************************** //
+.checkboxWrapper {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  input {
+    max-width: 13px;
+    margin:0;
+  }
+  label {
+    margin-top: 0px !important;
+    margin-left: 8px;
+  }
+}

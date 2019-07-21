@@ -1,4 +1,61 @@
 $(document).ready(function () {
+    let activityDetails = $("#activity_details");
+
+    // Change to the first item
+    $(".calendar_item_selector li:nth-child(1)").on("click", function(){
+        activityDetails.find("h3").text("Zondag 16 September: Samenkomst").hide().fadeIn('slow');
+        activityDetails.find(".icon-clock").text("De zaal is open vanaf 9:30").hide().fadeIn('slow');
+        activityDetails.find(".two_columns div:nth-child(1)").html("Zangdienst: Carola van Dongen <br />Spreker: Cees Visser <br /> Uitgangstekst: Spreuken 1:1/2 <br /><br />Na de dienst kunt u onder het genot van een kopje koffie of thee elkaar ontmoeten en uitwisselen.").hide().fadeIn('slow');
+        $(".calendar_item_selector li.active").removeClass('active');
+        $(".calendar_item_selector li:nth-child(1)").addClass('active');
+    });
+
+    // Change to the second item
+    $(".calendar_item_selector li:nth-child(2)").on("click", function(){
+        activityDetails.find("h3").text("Woensdag 19 September: Preekbespreking").hide().fadeIn('slow');
+        activityDetails.find(".icon-clock").text("De koffie staat klaar vanaf 19:45").hide().fadeIn('slow');
+        activityDetails.find(".two_columns div:nth-child(1)").html('Onder leiding van: Martien Stolwerk<br />We bespreken de preek van zondag 16 september. <br /><a class="icon icon-download" href="#">Download de MP3 hier</a><br />Lees ter voorbereiding John 1:1/15<br />').hide().fadeIn('slow');
+        $(".calendar_item_selector li.active").removeClass('active');
+        $(".calendar_item_selector li:nth-child(2)").addClass('active');
+    });
+
+});
+
+/**
+ * All the famcy stuff that needs to happen on scrolling.
+ */
+$(document).ready(function () {
+    let loginbox = $("#login_menu");
+    let overlay = $("#overlay");
+    let overlayClose = $("div.close");
+
+    // Open loginbox and show overlay
+    $(".open_login_window").on("click", function () {
+        loginbox.fadeToggle("slow").toggleClass("open");
+        overlay.fadeToggle().toggleClass("open");
+        // @todo disable scrolling.
+    });
+
+    // close overlay and loginbox
+    overlay.on("click", function () {
+        closeOverlayAndLoginBox();
+    });
+
+    function closeOverlayAndLoginBox() {
+        if (overlay.hasClass("open")) {
+            loginbox.fadeToggle().toggleClass("open");
+            overlay.fadeToggle().toggleClass("open");
+            // @todo enable scrolling.
+        }
+    }
+
+    overlayClose.on("click", function () {
+        closeOverlayAndLoginBox();
+    });
+
+});
+
+$(document).ready(function () {
 
   /**
    * Handle the level second of the main menu
@@ -274,4 +331,13 @@ $(document).ready(function () {
         }
     });
 
+});
+$(document).ready(function () {
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top -63
+        }, 500);
+    })
 });

@@ -10,12 +10,11 @@
   }
   ul {
     float: right;
+    cursor: pointer;
     li span {
       font-weight: 300;
       padding-right: 5px;
-      a {
-        font-weight: 600;
-      }
+      font-weight: 600;
     }
   }
 }

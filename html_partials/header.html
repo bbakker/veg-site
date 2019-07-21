@@ -1,15 +1,36 @@
 <!-- // *********************************** // -->
 <!-- // ************  Header  ************* // -->
 <!-- // *********************************** // -->
+<div id="overlay"></div>
 <header>
   <div class="toprow">
     <div class="wrapper container-fluid">
       <div class="row end-xs">
         <nav id="account-menu" class="col-md-3">
           <ul>
-            <li><a href="#"><span>Mijn</span>gemeente</a></li>
+            <li class="icon icon-lock open_login_window" title="Klik hier om in te loggen in mijn gemeente"><span>Mijn</span>gemeente</li>
           </ul>
         </nav>
+        <div id="login_menu" class="col-md-3">
+          <form action="ingelogd.html">
+            <div class="close"><span class="x"></span></div>
+            <div class="top">
+              <h3>Inloggen bij 'Mijn gemeente'</h3>
+              <label for="name">Emailadres</label>
+              <input type="text" name="name" id="name" value="">
+              <label for="passw">Wachtwoord <strong><a href="#"> - Vergeten?</a></strong></label>
+              <input type="password" name="passw" id="passw" value="">
+              <div class="checkboxWrapper">
+                <input type="checkbox" name="stay" id="stay" value="Ja">
+                <label for="stay">Ingelogd blijven</label>
+              </div>
+            </div>
+            <div class="bottom">
+              <input type="submit" value="Inloggen">
+              <a id="need_account_button" href="#">Ik wil graag een account</a>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

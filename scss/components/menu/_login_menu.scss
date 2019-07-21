@@ -1,0 +1,99 @@
+#login_menu {
+  display: none;
+  background: $secundary-color-light;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  text-align: left;
+
+  form {
+    color: white;
+    div.close {
+      float: right;
+      background-color: #508ac7;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+
+      .x {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+        padding-top: 15px;
+      }
+      .x:hover {
+        opacity: 1;
+      }
+      .x:before,
+      .x:after {
+        position: absolute;
+        left: 23px;
+        content: " ";
+        height: 20px;
+        width: 2px;
+        background-color: white;
+      }
+      .x:before {
+        transform: rotate(45deg);
+      }
+      .x:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .top {
+      padding: $global-padding * 2;
+      h3 {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: $global-padding / 2;
+      }
+      label {
+        margin-top: $global-padding;
+        font-size: 1rem;
+        display: inline-block;
+        a {
+          color: white;
+          font-weight: 400;
+          text-decoration: none;
+        }
+      }
+      input {
+        width: 100%;
+        background: $secondary-color;
+        border: none;
+        font-size: 1.2rem;
+        padding: 0.8rem 0 0.6rem;
+        color: white;
+      }
+    }
+
+    .bottom {
+      padding: $global-padding $global-padding * 2;
+      background: white;
+      color: $secondary-color;
+      display: flex;
+      justify-content: space-between;
+
+      input[type="submit"] {
+        border: 0;
+        background: $secundary-color-light;
+        padding: $global-padding $global-padding * 2;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      a {
+        padding: 8px 0;
+        font-size: 1rem;
+        color: $secondary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

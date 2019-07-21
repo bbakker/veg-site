@@ -1,4 +1,3 @@
-
 // *************************************** //
 // ******** Page progressbar  ************ //
 // *************************************** //
@@ -7,6 +6,7 @@
   height: 3px;
   position: sticky;
   top: 65px;
+  padding: 0;
 
   &.enabled {
     .progress-bar {

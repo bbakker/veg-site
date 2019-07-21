@@ -42,6 +42,7 @@
 #second-menu-wrapper {
   border-bottom: 1px solid $primary-color;
   background: lighten($secondary-color, 20%);
+  padding: 0;
 
   #main-menu-second {
     padding: 0;
@@ -86,7 +87,7 @@
 }
 
 #main-menu-second-description {
-  background-color: #447bb5;
+  background-color: $secundary-color-light;
   padding-right: 45px;
   padding-left: 45px;
   //border-right: 1px solid #86abd2;

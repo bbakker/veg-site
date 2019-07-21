@@ -1,0 +1,30 @@
+//Segment background colors
+
+section {
+  display: block;
+  padding: $global-padding * 3;
+
+  &.bg {
+    &-white {
+      background-color: white;
+    }
+    &-lightgrey {
+      background-color: $light-grey1;
+    }
+    &-lightgrey1 {
+      background-color: $light-grey2;
+    }
+    &-lightgrey2 {
+      background-color: $light-grey3;
+    }
+    &-green {
+      background-color: #49a98c;
+    }
+    &-yellow_orange{
+      background-color: #E4A545;
+    }
+    &-lightblue{
+      background-color: $light_blue;
+    }
+  }
+}
