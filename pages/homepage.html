@@ -10,6 +10,7 @@
   <!-- Header-->
   @@include('header.html')
 
+  <!-- Header image -->
   <section id="home-width-header-image">
     <div class="wrapper container-fluid">
       <div class="row center-xs">
@@ -22,6 +23,13 @@
             <div class="search">
               <button type="submit" value="Zoeken" class="search-submit">Zoeken</button>
               <input type="text" value="" placeholder="Waar ben je naar op zoek?">
+              <div class="search_filters">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzMzMzMzMyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNMTMuNzYsNi44OGMtMi4wNjkzNywwIC0zLjQ0LDEuMzcwNjMgLTMuNDQsMy40NHYxMC4zMmMwLDEuMDM0NjkgMC4zODk2OSwxLjY3OTY5IDEuMDc1LDIuMzY1bDU1LjA0LDU4LjQ4YzAuNjg1MzEsMC42ODUzMSAxLjY3OTY5LDEuMDc1IDIuMzY1LDEuMDc1aDM0LjRjMS4wMzQ2OSwwIDEuNjc5NjksLTAuMzg5NjkgMi4zNjUsLTEuMDc1bDU1LjA0LC01OC40OGMwLjY4NTMxLC0wLjY4NTMxIDEuMDc1LC0xLjMzMDMxIDEuMDc1LC0yLjM2NXYtMTAuMzJjMCwtMi4wNjkzNyAtMS4zNzA2MiwtMy40NCAtMy40NCwtMy40NHpNNjUuMzYsODkuNDR2NTEuNmMwLDEuMzcwNjMgMC42ODUzMSwyLjQzMjE5IDEuNzIsMy4xMTc1bDM0LjQsMjAuNjRjMC4zNDkzOCwwLjM0OTM4IDEuMDM0NjksMC4zMjI1IDEuNzIsMC4zMjI1YzAuNjg1MzEsMCAxLjAzNDY5LDAuMDI2ODggMS43MiwtMC4zMjI1YzEuMDM0NjksLTAuNjg1MzEgMS43MiwtMS43NDY4NyAxLjcyLC0zLjExNzV2LTcyLjI0eiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==">
+                <strong>Filter resultaten op:</strong>  
+                <input type="radio" name="search_filter" id="veg" value="veg"><label for="veg">Over de gemeente</label>
+                <input type="radio" name="search_filter" id="bible" value="bible"><label for="bible">Over de bijbel</label>
+                <input type="radio" name="search_filter" id="all" value="all"><label for="all">Beide</label>
+              </div>
             </div>
           </div>
         </div>
@@ -29,6 +37,16 @@
     </div>
   </section>
 
+  <!-- Introduction block -->
+  <section id="introduction">
+    <div class="wrapper container-fluid">
+      <div class="row center-xs">
+        <div class="col-sm-8">
+          <p style="margin-bottom:0;">Welkom bij Volle Evangelie Gemeente <strong style="font-weight: 400;">'Immanuël'</strong>. Wij zijn een gemeente in Breda met leden uit de wijde omtrek. Samen vormen we een gemeenschap van gelovigen tussen de 0 en over de 90 jaar oud, die het evangelie van Jezus Christus in al zijn volheid willen prediken en praktiseren. U vind in onze gemeente een duidelijke boodschap over het koninkrijk van Jezus Christus en over Gods plan met mensen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Button section -->
   <section class="bg-lightblue" id="buttons">
@@ -66,6 +84,7 @@
     </div>
   </section>
 
+  <!-- Calendar -->
   <section id="homepage_calendar" class="">
     <div class="wrapper container-fluid">
       <div class="row center-xs">

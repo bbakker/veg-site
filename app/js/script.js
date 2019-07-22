@@ -259,14 +259,14 @@ $(document).ready(function () {
     /*
     Trigger: open search box on hover
     */
-    $("header.small .search").mouseenter(function () {
+    $("header.small .search").on("mouseenter", function () {
         openSearch();
     });
 
     /* 
     Trigger: Close search box on mouseleave, and input box has not the focus.
     */
-    $("header.small .search").mouseleave(function () {
+    $("header.small .search").on("mouseleave", function () {
         if ($(this).find('input').is(":focus")) {
         } else {
             closeSearch();
@@ -276,7 +276,7 @@ $(document).ready(function () {
     /*
     Trigger: Close search box on focusout.
     */
-    $("header.small .search input").focusout(function () {
+    $("header.small .search input").on("focusout", function () {
         closeSearch()
     });
 
@@ -329,6 +329,12 @@ $(document).ready(function () {
                 }, 1200);
             });
         }
+    });
+
+    // Open the extra search filters on the homepage
+    let searchFilters = $(".search_filters");
+    $("#home-width-header-image .search input").on("focus", function () {
+        searchFilters.slideDown('slow');
     });
 
 });
