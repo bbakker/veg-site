@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  @@include('default_head.html')
+  <title>VEG homepage</title>
+</head>
+
+<body class="alternative1 page-home">
+  <!-- Header-->
+  @@include('header.html')
+
+  <!-- Header image -->
+  <section id="home-width-header-image">
+    <div class="wrapper container-fluid">
+      <div class="row center-xs">
+        <div class="col-md-6 inner">
+          <div class="next-meeting text-align-center">
+            <img class="calendar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAA6lBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUX/luAAAATXRSTlMA7eHczOJJBiHjXiL3Az5I/vkPSuSZawQK6OdUijwWufx50U/pYHVRCBCxpIRqAmkw37wrtl9klz8zgOz7HNpobTmqjy2o8OqI87r9fHCkuW4AAAEGSURBVEjH7dV3T8JAGAbwaxmWDWWqgCgiU1kukOEWlef7fx2v14ZN+h4mhD/6JL03eS+/tHddjM0STwA+L1vLtj6PDzweep8HMA9qX474XbBiTG3KvO/yC6KATqDMTky9MKv+g4jNVLdssrqRePmcJ7JOFvsrhJI9E5nsTg52+Q5ZTCqZFvXxw/1zf0MhuSCOjHoXxSfwYEsy2bMCBKl+B8Ps/eu3a0fy4kEySBmvfHxD046EAoGwSa4w5eME14S1aCYR0dvRlhzRO6gzKdIb4bYiRcaxQT/EZMgz1Bfi3beIFnsaMjnSgOI2UqKTmvV9OHfeSocskQuZ38uJIMVLujg+ZXvKH5TopepiKvjvAAAAAElFTkSuQmCC">
+            <div>Onze volgende samenkomst is op zondag 21 juli om 10:00 <br><a href="#">Lees hier hoe je bij ons komt</a></div>
+          </div>
+          <div class="searchwrapper">
+            <div class="search">
+              <button type="submit" value="Zoeken" class="search-submit">Zoeken</button>
+              <input type="text" value="" placeholder="Waar ben je naar op zoek?">
+              <div class="search_filters">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzMzMzMzMyI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNMTMuNzYsNi44OGMtMi4wNjkzNywwIC0zLjQ0LDEuMzcwNjMgLTMuNDQsMy40NHYxMC4zMmMwLDEuMDM0NjkgMC4zODk2OSwxLjY3OTY5IDEuMDc1LDIuMzY1bDU1LjA0LDU4LjQ4YzAuNjg1MzEsMC42ODUzMSAxLjY3OTY5LDEuMDc1IDIuMzY1LDEuMDc1aDM0LjRjMS4wMzQ2OSwwIDEuNjc5NjksLTAuMzg5NjkgMi4zNjUsLTEuMDc1bDU1LjA0LC01OC40OGMwLjY4NTMxLC0wLjY4NTMxIDEuMDc1LC0xLjMzMDMxIDEuMDc1LC0yLjM2NXYtMTAuMzJjMCwtMi4wNjkzNyAtMS4zNzA2MiwtMy40NCAtMy40NCwtMy40NHpNNjUuMzYsODkuNDR2NTEuNmMwLDEuMzcwNjMgMC42ODUzMSwyLjQzMjE5IDEuNzIsMy4xMTc1bDM0LjQsMjAuNjRjMC4zNDkzOCwwLjM0OTM4IDEuMDM0NjksMC4zMjI1IDEuNzIsMC4zMjI1YzAuNjg1MzEsMCAxLjAzNDY5LDAuMDI2ODggMS43MiwtMC4zMjI1YzEuMDM0NjksLTAuNjg1MzEgMS43MiwtMS43NDY4NyAxLjcyLC0zLjExNzV2LTcyLjI0eiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==">
+                <strong>Filter resultaten op:</strong>  
+                <input type="radio" name="search_filter" id="veg" value="veg"><label for="veg">Over de gemeente</label>
+                <input type="radio" name="search_filter" id="bible" value="bible"><label for="bible">Over de bijbel</label>
+                <input type="radio" name="search_filter" id="all" value="all"><label for="all">Beide</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction block -->
+  <section id="introduction">
+    <div class="wrapper container-fluid">
+      <div class="row center-xs">
+        <div class="col-sm-8">
+          <p style="margin-bottom:0;">Welkom bij Volle Evangelie Gemeente <strong style="font-weight: 400;">'Immanuël'</strong>. Wij zijn een gemeente in Breda met leden uit de wijde omtrek. Samen vormen we een gemeenschap van gelovigen tussen de 0 en over de 90 jaar oud, die het evangelie van Jezus Christus in al zijn volheid willen prediken en praktiseren. U vind in onze gemeente een duidelijke boodschap over het koninkrijk van Jezus Christus en over Gods plan met mensen.</p>
+        </div>
+        <div style="margin: 30px;">
+          <iframe src="//iframe.dacast.com/b/135152/c/505181" width="960" height="540" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Button section -->
+  <section class="bg-lightblue" id="buttons">
+    <div class="wrapper container-fluid">
+      <div class="row center-xs">
+        <div class="col-sm-12">
+          <ul class="topItems">
+            <li class="box"><a href="#">
+                <span class="line"></span>
+                <h3>Leer ons kennen</h3>
+                <p>Bent u benieuwd naar wie wij zijn als gemeente of zoekt u praktische informatie om ons te komen bezoeken?</p>
+                <span class="icon icon-longarrow"></span>
+              </a></li>
+            <li class="box"><a href="#">
+                <span class="line"></span>
+                <h3>Ontdek de bijbel</h3>
+                <p>Wij helpen u graag om de bijbel te ontdekken. Volg een van onze leesplannen, luister podcast of schaf een van onze boeken aan.</p>
+                <span class="icon icon-longarrow"></span>
+              </a></li>
+            <li class="box"><a href="#homepage_calendar">
+                <span class="line"></span>
+                <h3>Bekijk onze activiteiten</h3>
+                <p>Onze gemeente kent diverse activiteiten voor verschillende leeftijdsgroepen. Bekijk in de agenda alle details.</p>
+                <span class="icon icon-longarrow"></span>
+              </a></li>
+            <li class="box"><a class="open_login_window" href="#">
+                <span class="line"></span>
+                <h3>Voor leden</h3>
+                <p>Als lid van onze gemeente kunt u gebruik maken van diverse interne functionaliteiten. U heeft hiervoor een account nodig.</p>
+                <span class="icon icon-longarrow"></span>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section id="homepage_calendar" class="">
+    <div class="wrapper container-fluid">
+      <div class="row center-xs">
+        <div id="calendar_tite_row" class="col-sm-12">
+          <img class="calendar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAA6lBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUX/luAAAATXRSTlMA7eHczOJJBiHjXiL3Az5I/vkPSuSZawQK6OdUijwWufx50U/pYHVRCBCxpIRqAmkw37wrtl9klz8zgOz7HNpobTmqjy2o8OqI87r9fHCkuW4AAAEGSURBVEjH7dV3T8JAGAbwaxmWDWWqgCgiU1kukOEWlef7fx2v14ZN+h4mhD/6JL03eS+/tHddjM0STwA+L1vLtj6PDzweep8HMA9qX474XbBiTG3KvO/yC6KATqDMTky9MKv+g4jNVLdssrqRePmcJ7JOFvsrhJI9E5nsTg52+Q5ZTCqZFvXxw/1zf0MhuSCOjHoXxSfwYEsy2bMCBKl+B8Ps/eu3a0fy4kEySBmvfHxD046EAoGwSa4w5eME14S1aCYR0dvRlhzRO6gzKdIb4bYiRcaxQT/EZMgz1Bfi3beIFnsaMjnSgOI2UqKTmvV9OHfeSocskQuZ38uJIMVLujg+ZXvKH5TopepiKvjvAAAAAElFTkSuQmCC">
+          <h2>Onze activiteiten</h2>
+        </div>
+        <div id="activity_picker" class="col-sm-12 col-md-4">
+          <div title="Klik hier om door de activiteiten te scrollen" class="calendar_button_up icon icon-chevron-up"></div>
+          <ul class="calendar_item_selector">
+            <li>
+              <div class="date-item">
+                <div>Zon</div>
+                <div>16 sept</div>
+              </div>
+              <div class="date-title">
+                <h3>Samenkomst</h3>
+                <span class="icon icon-clock">10:00 - 12:00</span>
+              </div>
+            </li>
+            <li class="active">
+              <div class="date-item">
+                <div>Wo</div>
+                <div>19 sept</div>
+              </div>
+              <div class="date-title">
+                <h3>Preekbespreking</h3>
+                <span class="icon icon-clock">10:00 - 12:00</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-item">
+                <div>Zat</div>
+                <div>22 sept</div>
+              </div>
+              <div class="date-title">
+                <h3>Jeugdavond</h3>
+                <span class="icon icon-clock">10:00 - 12:00</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-item">
+                <div>Zon</div>
+                <div>23 sept</div>
+              </div>
+              <div class="date-title">
+                <h3>Samenkomst</h3>
+                <span class="icon icon-clock">10:00 - 12:00</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-item">
+                <div>Wo</div>
+                <div>26 sept</div>
+              </div>
+              <div class="date-title">
+                <h3>Preekbespreking</h3>
+                <span class="icon icon-clock">10:00 - 12:00</span>
+              </div>
+            </li>
+
+          </ul>
+          <div title="Klik hier om door de activiteiten te scrollen" class="calendar_button_down icon icon-chevron-down">Bekijk meer</div>
+        </div>
+        <div id="activity_details" class="col-sm-12 col-md-8">
+          <span class="line"></span>
+          <h3>Woensdag 19 September: Preekbespreking</h3>
+          <p class="icon icon-clock">De koffie staat klaar vanaf 19:45</p>
+          <div class="two_columns">
+            <div>
+              Onder leiding van: Martien Stolwerk
+              <br /> We bespreken de preek van zondag 16 september.
+              <br /><a class="icon icon-download" href="#">Download de MP3 hier</a>
+              <br />Lees ter voorbereiding John 1:1/15
+            </div>
+            <div class="profile_picture"></div>
+          </div>
+          <a class="download_ical icon icon-download" href="#">Zet deze activiteit in je eigen agenda</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- footer-->
+  @@include('footer.html')
+  @@include('scripts.html')
+</body>
+
+</html>
