@@ -1,0 +1,62 @@
+@media screen and (max-width: 767px){
+
+    /* give padding to whole menu */
+    #responsive-menu-container{
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+    
+    /* Centre menu items, and submenu items     */
+    #responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item .responsive-menu-item-link,
+    #responsive-menu-container{
+      text-align: center !important;
+    }
+    
+    /* give menu som more space  */
+    #responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link{
+        margin-top: 5px!important;
+        margin-bottom: 5px!important;
+        font-size:1.5rem !important;
+    }
+
+    /* give submenu level II some more space */
+    #responsive-menu-container #responsive-menu ul.responsive-menu-submenu.responsive-menu-submenu-open{
+        padding-top: 10px !important;
+        padding-bottom: 20px !important;
+    }
+    
+    /* second level menu item link */
+    #responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a{
+        display: inline-block;
+        background-color:transparent !important;
+        font-size: 1.3rem !important;
+        padding-left: 0 !important;
+        padding-right: 0!important;
+    }
+    
+    /* Hide the submenu arrow's */
+    .responsive-menu-subarrow,
+    .responsive-menu-subarrow-active{
+        display:none !important;
+    }
+
+    /* background-color of the first submenu level */
+    .responsive-menu-submenu-depth-1{
+        background-color: #efefef !important;        
+    }
+    
+    /* background-color of the second submenu level */
+    .responsive-menu-submenu-depth-2{
+        background-color: #dcdcdc !important;
+    }
+    
+    /* Give the login box some more space */
+    #loginformbox{
+        margin-top: 30px!important;
+    }
+
+    /* Give the footer text some more space */
+    #responsive-menu-additional-content{
+        margin-top: 50px!important;
+    }
+}
